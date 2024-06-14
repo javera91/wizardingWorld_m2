@@ -12,6 +12,6 @@ import {Observable} from "rxjs";
   constructor(private http: HttpClient) { }
 
 create<T>(item: T): Observable<T> {
-    return this.http.post<T>(`${this.url}/reg-students`, item);
+    return this.http.post<T>(`${this.url}/students`, item);
 }
 }

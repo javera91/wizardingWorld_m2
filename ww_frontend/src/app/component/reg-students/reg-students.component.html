@@ -1,44 +1,44 @@
 <h1>Registro de estudiantes de Hogwarts</h1>
 
-
 <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
-    <nz-form-item>
+
+    <nz-form-item> <!-- Formulario firstName. -->
       <nz-form-label [nzSpan]="7" nzRequired>First Name</nz-form-label>
-      <nz-form-control [nzSpan]="12">
+      <nz-form-control [nzSpan]="7">
         <input nz-input formControlName="firstName" placeholder="José" />
       </nz-form-control>
     </nz-form-item>
-    <nz-form-item>
+
+    <nz-form-item> <!-- Formulario lastName. -->
       <nz-form-label [nzSpan]="7" nzRequired>Last Name</nz-form-label>
-      <nz-form-control [nzSpan]="12">
+      <nz-form-control [nzSpan]="7">
         <input nz-input formControlName="lastName" placeholder="Vera" />
       </nz-form-control>
     </nz-form-item>
   
-    
-    <nz-form-item>
+    <nz-form-item> <!-- Formulario age. -->
       <nz-form-label [nzSpan]="7" nzRequired>Age</nz-form-label>
-      <nz-form-control [nzSpan]="12">
-                <nz-input-number formControlName="age" [nzMin]="0" [nzMax]="100000" [nzStep]="100"></nz-input-number>
+      <nz-form-control [nzSpan]="7">
+                <nz-input-number formControlName="age" nzPlaceHolder="0"></nz-input-number>
       </nz-form-control>
     </nz-form-item>
 
-    <nz-form-item>
+    <nz-form-item> <!-- Formulario house. -->
       <nz-form-label [nzSpan]="7" nzRequired>House</nz-form-label>
-      <nz-form-control [nzSpan]="12">
+      <nz-form-control [nzSpan]="7">
         <input nz-input formControlName="house" placeholder="Gryffindor" />
       </nz-form-control>
     </nz-form-item>
     
-    <nz-form-item>
+    <nz-form-item> <!-- Formulario level. -->
       <nz-form-label [nzSpan]="7" nzRequired>Level</nz-form-label>
-      <nz-form-control [nzSpan]="12">
+      <nz-form-control [nzSpan]="7">
   <input nz-input formControlName="level" placeHolder="7th year" />
       </nz-form-control>
     </nz-form-item>
 
-    <nz-form-item>
-      <nz-form-control [nzXs]="{ span: 24, offset: 0 }" [nzSm]="{ span: 16, offset: 8 }">
+    <nz-form-item> <!-- Formulario Create. -->
+      <nz-form-control [nzXs]="{ span: 24, offset: 0 }" [nzSm]="{ span: 12, offset: 5 }">
         <button nz-button nzType="primary">Create</button>
       </nz-form-control>
     </nz-form-item>
